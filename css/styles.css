@@ -51,7 +51,7 @@ a, a:hover {
     margin-right: 10px;
 }
 #oldmovie-card-list{
-    padding: 40px 10px;
+    padding: 0 10px;
 }
 .oldmovie-card {
     width: 100%;
@@ -146,4 +146,39 @@ a, a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+.oldmovie-pagination-container{
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+.oldmovie-pagination-box{
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.oldmovie-pagination-box p{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-primary);
+}
+.oldmovie-pagination-box button{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.oldmovie-pagination-box button img {
+    filter: bringhtness(0) saturate(100%) invert(22%) sepia(29%) saturate(5247%) hue-rotate(235deg) bringhtness(101%) contrat(89%);
+}
+
+.oldmovie-pagination-box button:disabled{
+    border: 1px solid var(--text-light-gray);
+
 }
